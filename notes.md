@@ -31,14 +31,20 @@ p[114]
 Two major directions:
 #### Bio Electrocity
 Very subtle? But I would like to try measure bio-electricity from roots in water(solutions). But this is definitely something very fragile and not easy to take. Any way to do this in a more compact way?
+
+
+micro-voltages (is action potential?) (and question of response to electromagnetic waves/fields eg. Lawrence, Experiments in Electroculture)
+
 #### Bioelectrical Impedance
+
 Project Examples
 - [midiSprout](https://www.midisprout.com/):  Galvanic Conductance + ATmega328(8 bits) [details](https://www.instructables.com/Biodata-Sonification/)
 - [SCÍON](https://www.instruomodular.com/product/scion/): a biofeedback sensor(biofeedback data, sourced from contact with organic surfaces) built into a quad random voltage generator. Based on the MidiSprout by Datagarden
 
 - [Arduino Project by mwlyon](http://www.mwlyon.com/design_services_pages/arduino_projects.html): AD5933
 
-Question: Difference between these two approaches? Is AD5933 more precise?
+- [resistance (wheatstone/transistor)](https://www.behance.net/gallery/44846645/Soni-Plantarum)
+
 
 #### Other Perspectives
 - [botsot](http://www.ciaranframe.com/#/botsot/) | [github](https://github.com/ciaranframe/botsot)
@@ -54,3 +60,4 @@ Question: Difference between these two approaches? Is AD5933 more precise?
 ### Links
 - [are.na board](https://www.are.na/qianxun-chen/plant-sonification)
 - Dennis Smalley's lecture on [Spatiality in acousmatic music](https://www.youtube.com/watch?v=_G68Q4gkOMc)
+- [All about plant sensing](https://libarynth.org/plant_sensing)

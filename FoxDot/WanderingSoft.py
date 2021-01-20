@@ -3,7 +3,7 @@ rphrase1 = P[1,1]
 # 2
 rphrase2 = P[2,1].shuffle()
 # 3
-rphrase3 = P[3,1].shuffle()
+rphrase3 = P[3,2,1].shuffle()
 # rest
 rphrase4 = P[1,1]
 

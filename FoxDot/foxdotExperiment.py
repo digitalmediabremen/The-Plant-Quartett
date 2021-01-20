@@ -13,8 +13,9 @@ Clock.bpm = 60
 #p1 >> play('___-_-')
 
 # Interesting instruments: ripple(long term), soft(shot term),space(hight)
-p2 >> ripple((0, -2), fmod=linvar([-200,3000], [4,100]), dur=30, sus=30, amp=0.4, pan=linvar([-1,1],8))
+p2 >> ripple((0, fmod=linvar([-200,3000], [4,100]), dur=30, sus=30, amp=0.4, pan=linvar([-1,1],8))
 p2.stop()
+# headphones VS speakers, duration in between [15,30]
 
 rphrase1 = P[1,10,10,10,1,10,10].shuffle()
 # 2
@@ -24,7 +25,13 @@ rphrase3 = P[3,2,1,10,10,1,10].shuffle()
 # rest
 rphrase4 = P[1,30]
 
-p3 >> soft(0, fmod=linvar([40,200], [rphrase1 | rphrase2 | rphrase3 | rphrase4]), dur=[rphrase1 | rphrase2 | rphrase3 | rphrase4], sus=5, amp=0.3)
+p3 >> soft(0, fmod=linvar([40,200], [rphrase1 | rphrase2 | rphrase3 | rphrase4]),
+     dur=[rphrase1 | rphrase2 | rphrase3 | rphrase4], sus=5, amp=0.3)
 
+# scd files
+# https://github.com/Qirky/FoxDot/blob/master/FoxDot/osc/scsyndef/soft.scd
+# ripple
+# https://github.com/Qirky/FoxDot/blob/master/FoxDot/osc/scsyndef/ripple.scd
+# Define your own synthdefs
+# https://foxdot.org/docs/using-your-own-synthdefs/
 # command + '.' to stop all sound
-
