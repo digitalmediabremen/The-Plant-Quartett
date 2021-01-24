@@ -8,3 +8,7 @@
 Sound production first in software then in hardware
 
 3. Final Compositions/Performance
+
+### Workflow
+1. Open SuperCollider and type in FoxDot.start and evaluate this line. SuperCollider is now listening for messages from FoxDot.
+2.`FoxDot`

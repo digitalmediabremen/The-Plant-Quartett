@@ -2,7 +2,8 @@
 - [Dennis Smalley](https://www.youtube.com/watch?v=CgXpT8gpfP4): electroacoustic
 - [Laurie Spiegel](https://www.youtube.com/watch?v=z_XKPkcM1Vs): composition
 - [Distinguishing Random, Algorithmic, and Intelligent Music ](http://lauriespiegel.net/ls/writings/alg_comp_ltr_to_cem.html)
-
+- [Acoustic Botany](https://davidbenque.com/projects/acoustic-botany/)
+- [Ryuichi Sakamoto: Forest Symphony](https://inhabitat.com/forest-symphony-allows-humans-to-hear-photosynthesis-video/)
 ### Research
 
 #### Scott, Bruce I. H., "Electricity in Plants", Scientific American, Oct. 1962, S. 107-115
