@@ -8,14 +8,18 @@ Serial myPort;
 float gsrValue;
 float prevValue = 0;
 int t = 0;
+float[] allData = {};
+boolean record = false;
+int maxDataL = 120 * 5; // 5min
+String fileName = "";
 
 void setup () {
   background(0);
   size(900, 450);
   stroke(255, 50, 50);
-  print(this, Serial.list()[3]);
+  println(Serial.list()[3]);
   myPort = new Serial(this, Serial.list()[3], 9600);
-  //initSuperCollider();
+  initSuperCollider();
 }
 
 void initSuperCollider() {
@@ -49,14 +53,51 @@ void serialEvent (Serial myPort) {
   // println("serial event!");
   s = myPort.readStringUntil('\n');
   if (s == null) return;
-  gsrValue = map(float(s), 0, 1024, 0, height/2);
+  gsrValue = map(float(s), 0, 1024, height/2, 50);
   println("gsrValue " + gsrValue);
   line(t, prevValue, t, gsrValue);
   t += 2;
+  if (record) {
+    if (allData.length >= maxDataL) {
+      saveFile();
+    } else {
+      allData = append(allData, gsrValue);
+    }
+  } else {
+    if (minute() % 37 == 0 ) startRecording();
+  }
+  
+}
+ 
+String[] floatToString(float[] arr){
+  String[] result = {};
+  for (int i = 0; i < arr.length; i++) {
+    result = append(result, str(arr[i]));
+  }
+  return result;
 }
 
-void exit()
-{
-    synth.free();
-    super.exit();
+String getFileName() {
+  fileName = fileName + "-" + day() + "_" + hour() + "_" + minute();
+  return fileName;
+}
+
+void saveFile() {
+  String n = getFileName();
+  println ("save recording to", n);
+  saveStrings(n + ".txt", floatToString (allData));
+  fileName = ""; 
+  record = false;
+}
+void startRecording() {
+  record = true;
+  fileName = getFileName();
+  println ("start recording", fileName);
+}
+void keyPressed() { // Press a key to save the data
+  if(record) {
+    saveFile();
+  } else {
+    startRecording();
+  }
 }

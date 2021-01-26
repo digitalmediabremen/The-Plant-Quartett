@@ -1,9 +1,9 @@
 ### Frequency Modulation
-
 https://www.youtube.com/watch?v=vvBl3YUBUyY
 - FM comes into play when you use one wave to modulate another wave
 - Modulator(operator) - Carrier
 - 'Ratio' refer to the frequencies between the waves that are involved.
+- Good Ratio: 1:2, 2:1,
 
 FM is a family of methods that share the common property of wavetable lookup according to a nonlinear oscillating function.
 

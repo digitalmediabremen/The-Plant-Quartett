@@ -8,7 +8,10 @@
 - FoxDot's Data manipulation is super useful, kind of painful to do similar things in super Supercollider
 
 ### Circuit
-- I got the wheatstone bridge diagram from Anika and ordered the parts that I need online.
-- I want to try both the wheatstone bridge as well as Anika's circuit based on professional measurements in the future, but for now I can focus more on the sound part of the project.
-- Have a more stable version of the GSR function
--
+- Now got some basic reading from a simple GSR
+- A GSR function with an amplifier[https://www.1010.co.uk/org/biologic.html]
+- I got the wheatstone bridge diagram from Anika and ordered the parts that I need online (See:Wheatstone Bridge Circuit)
+- I also want to try Anika's circuit based on professional measurements in the future, but for now I can focus more on the sound part of the project.
+
+
+####

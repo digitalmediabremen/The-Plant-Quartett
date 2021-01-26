@@ -1,4 +1,4 @@
-int sensorPin = A0;    // select the input pin for the potentiometer
+int sensorPin = A1;    // select the input pin for the potentiometer
 int sensorPin2 = A2;    // select the input pin for the potentiometer
 int sensorValue = 0;  // variable to store the value coming from the sensor
 int sensorValue2 = 0; 
@@ -13,10 +13,11 @@ void loop() {
   sensorValue = analogRead(sensorPin);
 //  sensorValue2 = analogRead(sensorPin2);
   delay(500);
-  Serial.print("A0:");
+  // processing
+  //Serial.println(sensorValue);
+  // superCollider
   Serial.print(sensorValue);
-  Serial.print(" ");
-//  Serial.print("A2:");
+  Serial.print('a');
 //  Serial.print(sensorValue2);
 //  Serial.println(" ");
 }
