@@ -15,3 +15,13 @@
 
 
 ####
+1.27
+Make the synth a foxdot synth
+play with effects in FoxDot
+add effects that I like to super collider
+Prepare 24 h data from one plant
+TODO:
+Get 24 h data from one plant
+Get multiple plant data
+try reading from multiples -> multiple sines
+Granular synthesis

@@ -51,7 +51,7 @@ void draw () {
 void serialEvent (Serial myPort) {
   String s;
   // println("serial event!");
-  s = myPort.readStringUntil('\n');
+  s = myPort.readStringUntil('a');
   if (s == null) return;
   gsrValue = map(float(s), 0, 1024, height/2, 50);
   println("gsrValue " + gsrValue);
