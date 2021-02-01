@@ -5,7 +5,7 @@
 - foxdot's scsyn is defined here: https://github.com/Qirky/FoxDot/blob/master/FoxDot/osc/scsyndef/
 
 #### Remarks
-- FoxDot's Data manipulation is super useful, kind of painful to do similar things in super Supercollider
+- FoxDot's Data manipulation is super useful, kind of painful to do similar things in super Supercollider87q2
 
 ### Circuit
 - Now got some basic reading from a simple GSR
@@ -13,15 +13,22 @@
 - I got the wheatstone bridge diagram from Anika and ordered the parts that I need online (See:Wheatstone Bridge Circuit)
 - I also want to try Anika's circuit based on professional measurements in the future, but for now I can focus more on the sound part of the project.
 
+#### log
 
-####
 1.27
 Make the synth a foxdot synth
 play with effects in FoxDot
 add effects that I like to super collider
 Prepare 24 h data from one plant
-TODO:
-Get 24 h data from one plant
-Get multiple plant data
-try reading from multiples -> multiple sines
-Granular synthesis
+
+1.30
+- Get data from multiple plants [done]
+- try reading from multiples -> multiple sines [done]
+- collect 3 plants data for 5 min [done, bad data hmm]
+- Tidy up data & Visualize 2 day Data
+
+
+2.3
+- processing, read data and write to serial port on loop
+- multiple sine waves compositions
+- 24 hours data composition

@@ -16,7 +16,6 @@ x = x.collect(_.asAscii);
 		ascii = ~port.read.asAscii;
 		// read: blocking read, carry the delay from arduino
 		// next: non-blocking read
-
 		if(ascii.isDecDigit, {
 			~charArray = ~charArray.add(ascii)
 		});
@@ -48,6 +47,7 @@ carrier= SinOsc.ar(carrfreq,0,0.5); // bipolar
 modulator= SinOsc.ar(modfreq,0,0.1, 0.1); // unipolar
 
 osc=(carrier*modulator);
+//
 
 osc = Mix(osc) * 0.5;
 osc = Pan2.ar(osc, pan);
@@ -82,7 +82,6 @@ Out.ar(bus, osc)}
 	{
 		~synth.set(\freq, ~val);
 		~synth2.set(\freq, ~val+33);
-		~val;
 		10.wait;
 	}.loop;
 }).play;
