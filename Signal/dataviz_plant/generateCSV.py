@@ -1,6 +1,7 @@
 import glob
 import csv
 import re
+import os
 
 def getObj(txt_files):
     obj = {}
@@ -28,12 +29,14 @@ def outputCSV(obj):
             'avg':sum(obj[key])/len(obj[key]),
             'data': " ".join(str(obj[key]))})
 
+def dateFormat(files):
+    for i, file in enumerate(files):
+        txt_files[i] = re.sub('_([0-9])_', r'_0\1_', file)
+        os.rename(file, txt_files[i])
 
 txt_files = glob.glob("longTerm/*.txt")
-for i, file in txt_files:
-    txt_files[i] = re.sub('_([0-9])_', r'_0\1_', f);
+# dateFormat(txt_files)
 txt_files.sort()
 #print(txt_files)
 obj = getObj(txt_files)
-print(obj)
-# outputCSV(obj)
+outputCSV(obj)
