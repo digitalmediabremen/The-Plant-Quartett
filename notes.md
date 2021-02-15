@@ -57,7 +57,7 @@ Below are a list of posts that I found particularly interesting to check:
 ### Prof Dr.Fromm's lab
 In Annika's post on her visit to [Prof Dr.Fromm's lab](https://annikaen.wordpress.com/2015/11/23/prof-dr-fromms-lab/#more-358), what I found interesting is this difference between variation potential and action potential that are caused by external stimuli. But since I'm less interested in the human interactions with plants such as touching, light is more important in this case as it's a major impact on the electronic state of a plant.
 
-![Forest Symphony](https://github.com/digitalmediabremen/plantSonification/raw/main/Imgs/forestSymphony.png)
+
 
 ### Forest Symphony
 This project [Forest Symphony](https://forestsymphony.ycam.jp) is led by YCAM InterLab in Japan with Ryuichi Sakamoto being the music director for the composition.
@@ -65,6 +65,8 @@ The lab has designed an amplifier shield for this project and all the informatio
 This project is also interesting because it open sourced the bioelectric potential data from various locations for a time period of one year. It's the only plant sonification project reference I found which made an attempt to measure plant data for a long time scale.
 
 Some one else has also used their data to create sound works, one example can be found [here](https://vimeo.com/93060880).
+
+![Forest Symphony Installation Shot](https://github.com/digitalmediabremen/plantSonification/raw/main/Imgs/forestSymphony.png)
 
 For the installation, it also measures temperature, humidity and sunlight data, but this is not part of the open sourced data.
 
