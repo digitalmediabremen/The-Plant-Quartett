@@ -1,16 +1,17 @@
-### Musical Reference:
+## Musical Reference:
 - [Dennis Smalley](https://www.youtube.com/watch?v=CgXpT8gpfP4): electroacoustic
 - [Laurie Spiegel](https://www.youtube.com/watch?v=z_XKPkcM1Vs): composition
 - [Distinguishing Random, Algorithmic, and Intelligent Music ](http://lauriespiegel.net/ls/writings/alg_comp_ltr_to_cem.html): Laurie Spiegel's writing in algorithmic music
 - [Ryoji Ikeda](https://www.youtube.com/watch?v=F5hhFMSAuf4&list=PLUSiSz_KpxrF-cKFkA9OTNEU-oMsDrHd6): noise and development
 
-Plant & Music
+### Plant & Music
 - [Acoustic Botany](https://davidbenque.com/projects/acoustic-botany/)
 - [Ryuichi Sakamoto: Forest Symphony](https://vimeo.com/332586819)
 
-### Research
+---
+## Research
 
-#### Scott, Bruce I. H., "Electricity in Plants", Scientific American, Oct. 1962, S. 107-115
+### Scott, Bruce I. H., "Electricity in Plants", Scientific American, Oct. 1962, S. 107-115
 [p107]
 - "Electrical disturbances similar to the nerve impulse are associated with a number of plant life processes. It seems likely that these currents and fields somehow influence plant growth and development"
 
@@ -46,18 +47,19 @@ Project Examples
 
 - [resistance (wheatstone/transistor)](https://www.behance.net/gallery/44846645/Soni-Plantarum)
 
-#### On Annika's master thesis
+### On Annika's master thesis
 After contacting Annika to consult with her about the circuit, she pointed me to her detailed [project diary](), which I found super interesting and helpful to read.
 Below are a list of posts that I found particularly interesting to check:
 - [Quotes](https://annikaen.wordpress.com/2015/05/01/background-and-motivation-quotes/#more-15)
 - [Atmosphere and sound 1](https://annikaen.wordpress.com/2015/05/11/atmosphere-and-sound-groups/#more-268), [2](https://annikaen.wordpress.com/2015/11/23/sound-hierarchies-and-interaction-scenarios/#more-513)
 - [On Guto Nobrega's breathing and wheatstone bridge](https://annikaen.wordpress.com/2015/10/29/back-to-reality/)
 
-#### Prof Dr.Fromm's lab
+### Prof Dr.Fromm's lab
 In Annika's post on her visit to [Prof Dr.Fromm's lab](https://annikaen.wordpress.com/2015/11/23/prof-dr-fromms-lab/#more-358), what I found interesting is this difference between variation potential and action potential that are caused by external stimuli. But since I'm less interested in the human interactions with plants such as touching, light is more important in this case as it's a major impact on the electronic state of a plant.
 
 ![Forest Symphony](https://github.com/digitalmediabremen/plantSonification/raw/main/Imgs/forestSymphony.png)
-#### Forest Symphony
+
+### Forest Symphony
 This project [Forest Symphony](https://forestsymphony.ycam.jp) is led by YCAM InterLab in Japan with Ryuichi Sakamoto being the music director for the composition.
 The lab has designed an amplifier shield for this project and all the information is released under this [link](https://special.ycam.jp/interlab/en/projects/forestsymphony.html).
 This project is also interesting because it open sourced the bioelectric potential data from various locations for a time period of one year. It's the only plant sonification project reference I found which made an attempt to measure plant data for a long time scale.
@@ -70,6 +72,7 @@ The installation includes multiple speakers(one corresponding to one location) a
 
 Although the technical aspect is very well documented until the data collection point. There is not much information provided regarding to how the sound is generated.
 
+---
 #### Other Perspectives
 - [botsot](http://www.ciaranframe.com/#/botsot/) | [github](https://github.com/ciaranframe/botsot)
   - DNA Sequencer: sections of plant's DNA sequence -> rhythmic values
@@ -79,6 +82,7 @@ Although the technical aspect is very well documented until the data collection 
   - Shape Sequencer
   - Sensor Drone
   - Image Envelope Generator
+
 ---
 ### Useful Links
 - [are.na board](https://www.are.na/qianxun-chen/plant-sonification)
