@@ -25,9 +25,14 @@ def outputCSV(obj):
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         for key in obj:
+            avg = sum(obj[key])/len(obj[key])
             writer.writerow({'time': key,
-            'avg':sum(obj[key])/len(obj[key]),
+            'avg':avg,
             'data': " ".join(str(obj[key]))})
+            if("29_" in key):
+                print("\"" + str(key) + "\":")
+                print(obj[key])
+                print(",")
 
 def dateFormat(files):
     for i, file in enumerate(files):
