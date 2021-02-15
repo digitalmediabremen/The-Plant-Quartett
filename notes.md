@@ -56,6 +56,7 @@ Below are a list of posts that I found particularly interesting to check:
 #### Prof Dr.Fromm's lab
 In Annika's post on her visit to [Prof Dr.Fromm's lab](https://annikaen.wordpress.com/2015/11/23/prof-dr-fromms-lab/#more-358), what I found interesting is this difference between variation potential and action potential that are caused by external stimuli. But since I'm less interested in the human interactions with plants such as touching, light is more important in this case as it's a major impact on the electronic state of a plant.
 
+![Forest Symphony](https://github.com/digitalmediabremen/plantSonification/raw/main/Imgs/forestSymphony.png)
 #### Forest Symphony
 This project [Forest Symphony](https://forestsymphony.ycam.jp) is led by YCAM InterLab in Japan with Ryuichi Sakamoto being the music director for the composition.
 The lab has designed an amplifier shield for this project and all the information is released under this [link](https://special.ycam.jp/interlab/en/projects/forestsymphony.html).
