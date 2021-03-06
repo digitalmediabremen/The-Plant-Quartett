@@ -48,10 +48,9 @@ x = x.collect(_.asAscii);
 s.plotTree;
 (
 SynthDef.new(\sine,
-{|amp=1, sus=1, pan=0, freq=0, vib=0, fmod=0, rate=0, bus=0, blur=1, beat_dur=1, atk=0.01, decay=0.01, rel=0.01, peak=1, level=0.8, delay = 0.1, max = 0.1, mul = 0.1|
+{|amp=1, sus=1, freq=0, bus=0, delay = 0.1, max = 0.1, mul = 0.1|
 
 var osc, env, carrier, modulator, carrfreq, modfreq;
-sus = sus * blur;
 
 // Amplitude Modulation
 carrfreq= freq;

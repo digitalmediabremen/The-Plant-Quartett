@@ -69,9 +69,9 @@ void display(String[] v) {
    
   for (int i = 0; i < v.length; i ++) {
     stroke(i==0?200:50, i==1?200:50, i==2?200:50);
-    float gsrValue = map(int(variables[i]), 0, 1024, height-50, 50);
+    float gsrValue = map(int(variables[i]), 0, 1024*4, height-50, 50);
     //print(prevValues[i], gsrValue);
-    line(t, prevValues[i], t, gsrValue);
+    //line(t, prevValues[i], t, gsrValue);
     prevValues[i] = gsrValue;
   }
   

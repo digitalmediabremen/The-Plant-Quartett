@@ -13,7 +13,7 @@ Sound production first in supercollider/foxdot, then potentially using electroni
 ### Deliverables
 1. Sound Installation
 2. An adaptation of the same setup for live performance
-3. Sound Track Compositions
+3. Sound Track Compositions [This class]
 
 ### Plan
 - Feb: Experiment on new circuits and finalize the circuit
