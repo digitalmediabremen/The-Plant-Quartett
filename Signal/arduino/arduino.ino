@@ -11,24 +11,33 @@ int sensorValue4 = 0;
 
 void setup() {
    // initialize serial:
+ // analogReference(EXTERNAL); 
   Serial.begin(9600);
 }
 
 void loop() {
   // read the value from the sensor:
+  //analogRead(sensorPin);
   sensorValue = analogRead(sensorPin);
-//  sensorValue2 = analogRead(sensorPin2);
-//  sensorValue3 = analogRead(sensorPin3);
-//  sensorValue4 = analogRead(sensorPin4);
+
+  //analogRead(sensorPin2);
+  sensorValue2 = analogRead(sensorPin2);
+  
+  //analogRead(sensorPin3);
+  sensorValue3 = analogRead(sensorPin3);
+
+  //analogRead(sensorPin4);
+  sensorValue4 = analogRead(sensorPin4);
+  
   delay(500);
   // processing
   //Serial.println(sensorValue);
   // superCollider
   Serial.print(sensorValue);
-  Serial.print('a');
+//  Serial.print('a');
 //  Serial.print(sensorValue2);
 //  Serial.print('b');
-//  Serial.print(sensorValue3);
+//  Serial.print(sensorValue3); 
 //  Serial.print("c");
 //  Serial.print(sensorValue4);
 //  Serial.print("d");

@@ -15,7 +15,7 @@ int counter = 0;
 int maxDataL = 40 * 5; // 5min
 
 void setup () {
-  background(0);
+  background(255);
   size(900, 450);
   println(Serial.list()[3]);
   myPort = new Serial(this, Serial.list()[3], 9600);
@@ -26,7 +26,7 @@ void draw () {
   display(variables);
   
   if (t >= width) {
-    background(0);
+    background(255);
     t = 0;
   }
 }
@@ -34,12 +34,14 @@ void draw () {
 void serialEvent (Serial myPort) {
   String s;
   // println("serial event!");
-  s = myPort.readStringUntil(99); // 97 - a
+  s = myPort.readStringUntil(100); // 97 - a
   
   if (s == null) return;
   s = s.replace("a", " ");
   s = s.replace("b", " ");
   s = s.replace("c", " ");
+  s = s.replace("d", " ");
+  //s = s.replace("e", "");
   println("gsrValue " + s);
   variables = s.split(" ");
   
@@ -66,13 +68,15 @@ String getFileName() {
 void display(String[] v) {
   
   if(prevValues.length == 0) prevValues = new float[v.length];
-   
   for (int i = 0; i < v.length; i ++) {
     stroke(i==0?200:50, i==1?200:50, i==2?200:50);
-    float gsrValue = map(int(variables[i]), 0, 1024*4, height-50, 50);
+    float gsrValue = map(int(variables[i]), 0, 1024, height-50, 50);
     //print(prevValues[i], gsrValue);
-    //line(t, prevValues[i], t, gsrValue);
-    prevValues[i] = gsrValue;
+    
+    if (i < prevValues.length) {
+      line(t, prevValues[i], t, gsrValue);
+      prevValues[i] = gsrValue;
+    }
   }
   
 }
