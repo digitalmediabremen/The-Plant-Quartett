@@ -1,24 +1,23 @@
-## plantSonification
-[Title](Working Title) is a project that aims to provide a less tonal listening experience of plants. It takes plants' natural behavior as input without deliberate human interference and translates it into an ambient musical experience. It’s not just about one plant, but how different kinds of plants differ in their rhythmic cycles and contribute together to a musical composition. Through this listening experience, the project encourages a more intimate relationship with plants in a slow, subtle and collective manner.
+## The Plant Quartett
+
+The Plant Quartett is a sound project that provides an ambient listening experience of plants by using multiple Soniplasts, a self-designed instrument that translates biodata from plants into music. Similar as Chloroplasts, which are organelles that conduct photosynthesis in plants, a Soniplast takes bioelectric potential data from a plant and translates it into sound. The hardware is based on the Teensy boards and it uses the Teensy Audio Library for sound design. By having multiple Soniplasts, the Plant Quartett pays attention to the relative differences in rhythmic cycles among plants and how they contribute together to a musical composition. The objective of the project is to encourage an intimate yet playful relationship with plants in a slow, subtle and collective manner.
+
+### PCB Design
+Schematics
+![Schematics](https://raw.githubusercontent.com/digitalmediabremen/The-Plant-Quartett/main/pcb/schematics.png
+)
+
+3D Preview(Front)
+![3D Preview(Front)](https://raw.githubusercontent.com/digitalmediabremen/The-Plant-Quartett/main/pcb/3d_view_front.png
+)
+
+3D Preview(Back)
+![3D Preview(Back)](https://raw.githubusercontent.com/digitalmediabremen/The-Plant-Quartett/main/pcb/3d_virew_back.png
+)
+
+### Sound Samples
+[Sound Cloud](https://soundcloud.com/user-523089589/the-plant-quatett)
+
 
 ### Links
 [Concept](https://github.com/digitalmediabremen/plantSonification/blob/main/concept.md) | [Notes](https://github.com/digitalmediabremen/plantSonification/blob/main/notes.md)
-
-### Components
-1. Experiments: sensors, circuit
-2. Sonification
-Sound production first in supercollider/foxdot, then potentially using electronics
-3. Final Compositions/Performance/Installation
-
-### Deliverables
-1. Sound Installation
-2. An adaptation of the same setup for live performance
-3. Sound Track Compositions [This class]
-
-### Plan
-- Feb: Experiment on new circuits and finalize the circuit
-- March 1-14:
-PCB design and oder (individual consultation)
-Electrodes design
-Installation setup at Circa 106
-- March 15-31: Project documentation, Compositions

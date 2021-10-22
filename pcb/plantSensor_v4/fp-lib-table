@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name CS4344)(type KiCad)(uri /Users/cqx931/Documents/KiCad/Libraries/myLibrary/CS4344-CZZR.pretty)(options "")(descr ""))
+  (lib (name LM358DR2G)(type KiCad)(uri /Users/cqx931/Documents/KiCad/Libraries/myLibrary/LM358DR2G/LM358DR2G.pretty)(options "")(descr ""))
+  (lib (name MHPA1515RGBDTS)(type KiCad)(uri /Users/cqx931/Documents/KiCad/Libraries/myLibrary/MHPA1515RGBDT/MHPA1515RGBDTS.pretty)(options "")(descr ""))
+  (lib (name 19037ARSGHBHW1S032T)(type KiCad)(uri /Users/cqx931/Documents/KiCad/Libraries/myLibrary/19-037A_RSGHBHW1-S03_2T/19037ARSGHBHW1S032T.pretty)(options "")(descr ""))
+)

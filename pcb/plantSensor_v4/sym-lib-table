@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Plant-Sensor-rescue)(type Legacy)(uri "${KIPRJMOD}/Plant Sensor-rescue.lib")(options "")(descr ""))
+)

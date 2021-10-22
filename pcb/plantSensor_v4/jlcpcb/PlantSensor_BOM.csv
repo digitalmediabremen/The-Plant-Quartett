@@ -1,0 +1,18 @@
+Comment,Designator,Footprint,JLCPCB Part #
+4.7uF Polarized capacitor,C1,C_0402_1005Metric,C23733
+1uF Polarized capacitor,C2,C_0402_1005Metric, C52923
+"0.1uF Unpolarized capacitor, small symbol","C3,C8",C_0402_1005Metric, C1525
+"3,3uF Polarized capacitor","C6,C4,C5",C_0603_1608Metric,C51412
+10uF Polarized capacitor,C7,C_0805_2012Metric,C15850
+CLV1L-FKB Cree PLCC4 3 in 1 SMD LED,D1,19037ARSGHBHW1S032T,C282128
+3.3M Resistor,R1,R_0603_1608Metric,C141659
+680K Resistor,"R3,R2",R_0402_1005Metric,C163456
+100K Resistor,"R4,R6,R7,R5",R_0402_1005Metric,C144809
+4.7K Resistor,R8,R_0402_1005Metric,C140158
+10k Resistor,"R10,R9",R_0402_1005Metric, C144807
+470R Resistor,"R11,R12",R_0402_1005Metric, C163829
+220R Resistor,"R13,R14,R15",R_0402_1005Metric, C25091
+"R_POT_US Potentiometer, US symbol","RV1,RV2,RV3,RV4",Potentiometer_Alps_RK09K_Single_Vertical,C209779
+"SW_Push Push button switch, generic, two pins",SW1,SW_Push_1P1T_NO_6x6mm_H9.5mm,C273520
+"LM358 Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8",U1,LM358DR2G,C7950
+CS4344-CZZR ,U3,CS4344-CZZR,C8952
