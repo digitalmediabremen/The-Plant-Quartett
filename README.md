@@ -4,14 +4,17 @@ The Plant Quartett is a sound project that provides an ambient listening experie
 
 ### PCB Design
 Schematics
+
 ![Schematics](https://raw.githubusercontent.com/digitalmediabremen/The-Plant-Quartett/main/pcb/schematics.png
 )
 
 3D Preview(Front)
+
 ![3D Preview(Front)](https://raw.githubusercontent.com/digitalmediabremen/The-Plant-Quartett/main/pcb/3d_view_front.png
 )
 
 3D Preview(Back)
+
 ![3D Preview(Back)](https://raw.githubusercontent.com/digitalmediabremen/The-Plant-Quartett/main/pcb/3d_virew_back.png
 )
 
