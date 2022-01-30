@@ -1,3 +1,4 @@
+#include <ADC.h>
 #include <Audio.h>
 #include <Wire.h>
 #include <SPI.h>
@@ -21,15 +22,16 @@ AudioConnection          patchCord6(amp1, 0, i2s1, 1);
 
 // GUItool: end automatically generated code
 
-const int signalPin = A1; 
-const int audioInPin = A2;
+// on board
+const int signalPin = A1; // ADC0
+const int audioInPin = A2; // ADC1
 const int pot1Pin = A4;
 const int pot2Pin = A5;
 const int pot3Pin = A6;
 const int pot4Pin = A7;
 
+// maping
 const int myInput = audioInPin;
-
 int pitchPin = pot1Pin;
 int modPin = pot2Pin;
 int reverbPin = pot4Pin;
@@ -46,16 +48,22 @@ float freq = 200;
 float freqRange = 300;
 int modRange = 1;
 
-float mod = 0.2; //0.1-0.25
+float mod = 0.2;
 float goalMod = 1;
 float goalFreq = 0;
-int reverbRoom = 0.7;
+float reverbRoom = 0.7;
 float level = 1;
 
 boolean debug = true;
 
 //how many data points are used for the movingavg reading
-movingAvg mySensor(1); 
+movingAvg mySensor(10); 
+
+// ADC
+ADC *adc = new ADC();
+#define USE_ADC_0
+#define USE_ADC_1
+#define BUFFER_SIZE 500
 
 void setup() {
   Serial.begin(9600);
@@ -72,27 +80,31 @@ void setup() {
   // power
   //pinMode(LED_BUILTIN, OUTPUT);
   //digitalWrite(LEDPin, HIGH);
-  //pinMode(LEDPin, OUTPUT);
-
+  pinMode(LEDPin, OUTPUT);
+  adc->adc0->setAveraging(10); // set number of averages
+  adc->adc0->setResolution(10); // set bits of resolution
+  adc->adc0->setConversionSpeed(ADC_CONVERSION_SPEED::LOW_SPEED); // change the conversion speed
+  adc->adc0->setSamplingSpeed(ADC_SAMPLING_SPEED::LOW_SPEED); // change the sampling speed
 
   mySensor.begin();
+  delay(2000);
 }
 
 void loop() {
   sensorData = analogRead(signalPin);
-  sensorValue = sensorData;
+  sensorValue = mySensor.reading(sensorData);
   
-  analogWrite(LEDPin, sensorValue);
+  analogWrite(LEDPin,  map(sensorValue, 0, 1023, 0,10));
   
   freqRange = map(analogRead(pitchPin), 0, 1023, 800,0);
-  modRange = analogRead(modPin)*4 + 1024*2;
-  level = map(analogRead(gainPin), 0,1023, 1,0); // map it?
-  reverbRoom = mapfloat(analogRead(reverbPin), 0,1023,0,1);
+  modRange = analogRead(modPin)*5 + 1024*2; // mod 0.14-0.5
+  level = mapfloat(analogRead(gainPin), 0,1023, 2,1); 
+  reverbRoom = mapfloat(analogRead(reverbPin), 0,1023,1,0);
   
   delay(50);
   AudioNoInterrupts(); 
   sine_fm1.frequency(freq);
-  sine_fm1.amplitude(level);
+  amp1.gain(level);
   modulator.frequency(mod);
   updateSound();
   AudioInterrupts(); 
@@ -100,10 +112,10 @@ void loop() {
   myTime = millis();
   
   //every 5 seconds
-//  if(int(myTime/1000) % 5 == 0) {
+  if(int(myTime/1000) % 5 == 0) {
     interpretValue();
-  //}
-   
+  }
+  
   delay(50);
 }
 
@@ -114,11 +126,11 @@ void interpretValue() {
 }
 
 void updateSound(){
-  if (freq < goalFreq){
-    freq += 1;
-  } else if(freq > goalFreq){
-    freq -= 1;
-  }
+//  if (freq < goalFreq){
+//    freq += 1;
+//  } else if(freq > goalFreq){
+//    freq -= 1;
+//  }
 
   if (mod < goalMod-0.01){
     mod += 0.01;
@@ -129,24 +141,26 @@ void updateSound(){
  freeverb1.roomsize(reverbRoom);
   
  if(debug) {
- Serial.print("Mod = ");
- Serial.println(mod);
- Serial.print("GoalMod = ");
- Serial.println(goalMod);
- Serial.print("ModRange = ");
- Serial.println(modRange);
- Serial.print("Freq = ");
- Serial.println(freq);
- Serial.print("GoalFreq = ");
- Serial.println(goalFreq);
- Serial.print("Freqrange = ");
- Serial.println(freqRange);
+// Serial.print("Mod = ");
+// Serial.println(mod);
+// Serial.print("GoalMod = ");
+// Serial.println(goalMod);
+
+// Serial.print("Freq = ");
+// Serial.println(freq);
+// Serial.print("GoalFreq = ");
+// Serial.println(goalFreq);
+
  Serial.print("SensorValue = ");
  Serial.println(sensorValue);
- Serial.print("gainValue = ");
- Serial.println(level);
- Serial.print("reverbValue = ");
- Serial.println(reverbRoom);
+// Serial.print("ModRange = ");
+// Serial.println(modRange);
+// Serial.print("Freqrange = ");
+// Serial.println(freqRange);
+// Serial.print("gainValue = ");
+// Serial.print(level);
+// Serial.print("\t reverbValue = ");
+// Serial.println(reverbRoom);
  }
 }
 

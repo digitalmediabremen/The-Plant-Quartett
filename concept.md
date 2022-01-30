@@ -1,12 +1,12 @@
 #### On Time
 https://www.cnvill.net/mfgldstn.htm
 
-Basho (1644-1694) is reported to have said, 
+Basho (1644-1694) is reported to have said,
 > "Learn about a pine tree from a pine tree, and about a bamboo stalk from a bamboo stalk."
 
 What he meant, according to an early admirer (Doho),
 
-> was that the poet should detach his mind from self ... and enter into the object, sharing its delicate life and its feelings. Whereupon a poem forms of itself. Description of the object is not enough: unless a poem contains feelings which have come from the object, the object and the poet's self will be separate things. 
+> was that the poet should detach his mind from self ... and enter into the object, sharing its delicate life and its feelings. Whereupon a poem forms of itself. Description of the object is not enough: unless a poem contains feelings which have come from the object, the object and the poet's self will be separate things.
 
 It is revealing to paraphrase that quotation and commentary in terms that apply to Feldman's compositions: Learn about Time, from Time. Enter into Time, sharing its delicate life and its feelings. Whereupon a composition forms itself. Description of Time is not enough: unless a composition contains feelings which have come from Time, Time and the composer's self will be separate things.
 
