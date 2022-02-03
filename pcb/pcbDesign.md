@@ -1,4 +1,4 @@
-![](pcb_photo.jpg)
+![](pcb_web.jpg)
 
 #### Schematics
 
