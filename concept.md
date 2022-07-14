@@ -2,7 +2,7 @@
 https://www.cnvill.net/mfgldstn.htm
 
 Basho (1644-1694) is reported to have said,
-> "Learn about a pine tree from a pine tree, and about a bamboo stalk from a bamboo stalk."
+> "Learn about a pine tree from a pine tree, and about a bamboo stalk from a bamboo stalk." - Basho
 
 What he meant, according to an early admirer (Doho),
 
