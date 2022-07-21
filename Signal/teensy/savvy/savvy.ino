@@ -85,6 +85,9 @@ ADC *adc = new ADC();
 #define BUFFER_SIZE 1000
 
 String role = "C";
+// role B,C 3 volumes?
+// role A 3
+// role D 2
 
 // role A is the bass(till 50), B,C - mid range, D - high
 // 
@@ -128,13 +131,13 @@ void setup() {
   delay(500);
 
   if (role == "A") {
-  freqBase = 50;
+  freqBase = 70; // 20-100, smaller freqRange
 } else if(role == "B") {
-  freqBase = 100;
+  freqBase = 150; // 100-200
 } else if(role == "C") {
-  freqBase = 200;
+  freqBase = 250; // 200-300
 } else if(role == "D") {
-  freqBase = 800;
+  freqBase = 400; //350-450
 }
   freq = freqBase;
   goalFreq = freqBase;
